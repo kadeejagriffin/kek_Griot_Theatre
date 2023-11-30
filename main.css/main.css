@@ -1,0 +1,97 @@
+
+body{
+    background-color: black;
+    color: mintcream
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.9fr 2.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". . ."
+    "Header\(Featured-Shows\) Header\(Featured-Shows\) Header\(Featured-Shows\)"
+    "Ticket-Sales Ticket-Sales Ticket-Sales";
+}
+.Header\(Featured-Shows\) {  display: grid;
+    grid-template-columns: 20fr 0fr 1fr;
+    grid-template-rows: 1.1fr 0.9fr 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    "border3 . .";
+    grid-area: Header\(Featured-Shows\);
+}
+
+.border3 {  display: grid;
+    grid-template-columns: 1fr [e] 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+    grid-area: border3;
+}
+
+.Ticket-Sales {  display: grid;
+    grid-template-columns: 1.2fr 5.3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "border1 img border2"
+    "border1 img border2"
+    "border1 img border2"
+    "footer footer footer";
+    grid-area: Ticket-Sales;
+}
+
+.img {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+    ". title button1"
+    "img2 title2 button2"
+    "img3 title3 button3"
+    "img4 title4 button4";
+    grid-area: img;
+}
+
+.img2 { grid-area: img2; }
+
+.img3 { grid-area: img3; }
+
+.img4 { grid-area: img4; }
+
+.title { grid-area: title; }
+
+.title2 { grid-area: title2; }
+
+.title3 { grid-area: title3; }
+
+.title4 { grid-area: title4; }
+
+.button1 { grid-area: button1; }
+
+.button2 { grid-area: button2; }
+
+.button3 { grid-area: button3; }
+
+.button4 { grid-area: button4; }
+
+.footer { grid-area: footer; }
+
+.border2 { grid-area: border2; }
+
+.border1 { grid-area: border1; }
