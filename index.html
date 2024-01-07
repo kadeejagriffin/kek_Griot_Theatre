@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Box with Navbar Example</title>
+    <style>
+        #image {
+            width: 200px; 
+        }
+
+        .image-container {
+            margin-bottom: 20px; 
+        }
+
+        .text-container {
+            padding-left: 10px; 
+        }
+        
+        .footer {
+            background-color: black;
+            color: rgb(255, 255, 255); 
+            padding: 20px; 
+        }
+
+        .footer-column {
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="border p-3">
+                    <nav class="navbar navbar-expand-lg bg-dark">
+                        <div class="container-fluid">
+                            <p class="text-white">Griot Theater</p>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Features</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Our Actors</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Mission</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <img data-testid="image-asset" src="https://media.istockphoto.com/id/1469260192/photo/two-actors-performing-on-stage.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=1xNyzvU_8UpRz-LRZdP1YZX0pf_0Fa407v8zUmQmWsI=" alt="Two actors performing on stage Stage Theater Stock Photo" title="Two actors performing on stage Stage Theater Stock Photo" style="max-height:668px;max-width:100%;object-fit:scale-down;width:auto;height:auto" fetchpriority="high">
+                    <nav class="navbar bg-dark">
+                        <div class="container-fluid">
+                            <span class="navbar-text">
+                                <p class="text-white">April 2020</p>
+                            </span>
+                        </div>
+                    </nav>
+                    
+                    </div>
+                    
+                    <div class="image-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="image" data-testid="img" src="https://media.istockphoto.com/id/1488301035/photo/buying-movie-tickets.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=nM75AWVOOHowXrayRHUT-Ite9EmruVtqBjXqRSeAWIs=" alt="Buying movie tickets!" title="Buying movie tickets!" class="ow0qGZRKCM7uQ_J7776T" width="300">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-end">
+                                <p>A Raisin In The Sun</p>
+                                <p>April 6, 2020 - March 12, 2021</p>
+                                <p>Griot Theatre, 233 State St Chicago,IL</p>
+                                <p>$75</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="image" data-testid="img" src="https://media.istockphoto.com/id/1488301035/photo/buying-movie-tickets.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=nM75AWVOOHowXrayRHUT-Ite9EmruVtqBjXqRSeAWIs=" alt="Buying movie tickets!" title="Buying movie tickets!" class="ow0qGZRKCM7uQ_J7776T" width="300">
+                            </div>
+                            <div class="col-md-6 text-container">
+                                <p>A Raisin In The Sun</p>
+                                <p>April 6, 2020 - March 12, 2021</p>
+                                <p>Griot Theatre, 233 State St Chicago,IL</p>
+                                <p>$75</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="image" data-testid="img" src="https://media.istockphoto.com/id/1488301035/photo/buying-movie-tickets.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=nM75AWVOOHowXrayRHUT-Ite9EmruVtqBjXqRSeAWIs=" alt="Buying movie tickets!" title="Buying movie tickets!" class="ow0qGZRKCM7uQ_J7776T" width="300">
+                            </div>
+                            <div class="col-md-6 text-container">
+                                <p>A Raisin In The Sun</p>
+                                <p>April 6, 2020 - March 12, 2021</p>
+                                <p>Griot Theatre, 233 State St Chicago,IL</p>
+                                <p>$75</p>
+                            </div>
+                            <footer class="footer mt-auto py-3 bg-dark">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img id="zoom-image" data-testid="img" src="https://media.istockphoto.com/id/505233467/photo/map-of-chicago.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=w_rKJTbe8fxPJHyDZ0eyNByKZ6RPfTiKC29DhR8PWPk=" alt="Map of Chicago Map Series Map Stock Photo" title="Map of Chicago Map Series Map Stock Photo" class="ow0qGZRKCM7uQ_J7776T" width="150">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>Info</h5>
+                                            <p>Chicago,IL</p>
+                                            <p>example@google.com</p>
+                                            <p>Call: 123-456-7891</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>Shows</h5>
+                                            <p>The Piano Lesson</p>
+                                            <p>A Raisin In The Sun</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>Social</h5>
+                                            <p>Facebook</p>
+                                            <p>Twiter</p>
+                                            <p>Youtube</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        
+                            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+                        </body>
+                        
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+
+</html>
